@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SURY STORE</title>
+  <!-- ✅ Link your CSS file -->
+  <link rel="stylesheet" href="store.css" />
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">SURY STORE</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#cart">Cart</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Welcome to Our Store</h2>
+      <p>Browse through our amazing collection of products and manage your inventory efficiently.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ✅ Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2 class="section-title">Our Products</h2>
+      <div id="product-list" class="product-list" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ✅ Cart Section -->
+  <section id="cart" class="cart">
+    <div class="container">
+      <h2 class="section-title">Your Cart</h2>
+      <div id="cart-list" class="cart-list"></div>
+      <div class="cart-summary">
+        <div>
+          <p><strong>Items:</strong> <span id="summary-items">0</span></p>
+          <p><strong>Subtotal:</strong> <span id="summary-total">₹0</span></p>
+        </div>
+        <div class="cart-actions">
+          <button id="clear-cart" class="btn btn-ghost">Clear Cart</button>
+          <button id="checkout" class="btn">Checkout</button>
+        </div>
+      </div>
+      <a href="#products" class="btn btn-lite">Continue Shopping</a>
+    </div>
+  </section>
+
+  <!-- ✅ Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p>Phone: <a href="tel:5689755685">5689755685</a></p>
+      <p>Email: <a href="mailto:Sury@store.com">Sury@store.com</a></p>
+      <form id="contact-form" class="contact-form" novalidate>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="contact-status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 SURY STORE. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="store.js"></script>
+</body>
+</html>
